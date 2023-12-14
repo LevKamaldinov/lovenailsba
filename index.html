@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Сайт мастера маникюра и педикюра из Буэнос-Айреса Александра Гурьева"
+      content="Sitio web del manicurista y pedicurista de Buenos Aires Alexander Guryev"
     />
     <meta
       name="keywords"
-      content="маникюр, педикюр, ногти, наращивание ногтей, Буэнос-Айрес"
+      content="manicure, pedicure, uñas, extensiones de uñas, Buenos Aires"
     />
     <title>LoveNailsBA</title>
     <link rel="stylesheet" href="style.css" />
@@ -25,161 +25,226 @@
       <h1>LoveNailsBA</h1>
       <nav>
         <a href="#aboutMe" data-language="es">Acerca de mí</a>
-        <a href="#slider" data-language="es">Ejemplos de trabajo</a>
+        <a href="#services" data-language="es">Servicios</a>
         <a href="#contacts" data-language="es">Сontactos</a>
 
         <a href="#aboutMe" data-language="ru">Обо мне</a>
-        <a href="#slider" data-language="ru">Примеры работ</a>
+        <a href="#services" data-language="ru">Услуги</a>
         <a href="#contacts" data-language="ru">Контакты</a>
 
         <a href="#aboutMe" data-language="en">About me</a>
-        <a href="#slider" data-language="en">Work examples</a>
+        <a href="#services" data-language="en">Services</a>
         <a href="#contacts" data-language="en">Contacts</a>
       </nav>
     </header>
     <main>
-      <div class="aboutMe" id="aboutMe">
+      <section
+        class="aboutMe"
+        id="aboutMe"
+        itemscope
+        itemtype="https://schema.org/NailSalon"
+      >
+        <div class="aboutMe__wrapper__main">
+          <p class="aboutMe__p" data-language="es">
+            ¡Hola a todos! <br /><br />
+            ¡Mi nombre es Alexander! <br /><br />
+            Soy manicurista y pedicurista de Buenos Aires
+          </p>
+          <p class="aboutMe__p" data-language="ru">
+            Всем привет! <br /><br />
+            Меня зовут Александр! <br /><br />
+            Я - мастер маникюра и педикюра из Буэнос-Айреса
+          </p>
+          <p class="aboutMe__p" data-language="en">
+            Hi all! <br /><br />
+            My name is Alexander! <br /><br />
+            I am a manicurist and pedicurist from Buenos Aires
+          </p>
+          <img
+            src="./img/alex.jpg"
+            alt="photo of Aleksandr Gurev"
+            class="mainPhoto"
+          />
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2 data-language="es">Al contactarme podrás recibir:</h2>
+        <h2 data-language="ru">Обращаясь ко мне, вы можете получить:</h2>
+        <h2 data-language="en">By contacting me, you can receive:</h2>
+        <div class="service__wrapper__main">
+          <div class="service__wrapper__first">
+            <span class="service__span" data-language="es">Manicura</span>
+            <span class="service__span" data-language="ru">Маникюр</span>
+            <span class="service__span" data-language="en">Manicure</span>
+          </div>
+          <div class="service__wrapper__second">
+            <span class="service__span" data-language="es"
+              >Manicura con recubrimiento</span
+            >
+            <span class="service__span" data-language="ru"
+              >Маникюр с покрытием</span
+            >
+            <span class="service__span" data-language="en"
+              >Manicure with coating</span
+            >
+          </div>
+          <div class="service__wrapper__third">
+            <span class="service__span" data-language="es"
+              >Extensiones de uñas</span
+            >
+            <span class="service__span" data-language="ru"
+              >Наращивание ногтей</span
+            >
+            <span class="service__span" data-language="en"
+              >Nail extensions</span
+            >
+          </div>
+          <div class="service__wrapper__fourth">
+            <span class="service__span" data-language="es"
+              >Pedicura INTELIGENTE</span
+            >
+            <span class="service__span" data-language="ru">Педикюр SMART</span>
+            <span class="service__span" data-language="en">Pedicure SMART</span>
+          </div>
+          <div class="service__wrapper__fifth">
+            <span class="service__span" data-language="es"
+              >Pedicura con recubrimiento</span
+            >
+            <span class="service__span" data-language="ru"
+              >Педикюр с покрытием</span
+            >
+            <span class="service__span" data-language="en"
+              >Pedicure with coating</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="guarantees">
+        <h2 class="guarantees__h2" data-language="es">
+          Al brindar servicios garantizo
+        </h2>
+        <h2 class="guarantees__h2" data-language="ru">
+          При оказании услуг я гарантирую
+        </h2>
+        <h2 class="guarantees__h2" data-language="en">
+          When providing services I guarantee
+        </h2>
+        <div class="guarantees__div__first">
+          <h3 data-language="es">Consumibles desechables</h3>
+          <h3 data-language="ru">Одноразовые расходники</h3>
+          <h3 data-language="en">Disposable consumables</h3>
+          <img src="./img/nailfile.png" alt="nail file" />
+          <p data-language="es">
+            limas de uñas, palitos de naranja, servilletas, etc. son
+            exclusivamente desechable
+          </p>
+          <p data-language="ru">
+            пилочки, апельсиновые палочки, салфетки и т.п. исключительно
+            одноразовые
+          </p>
+          <p data-language="en">
+            nail files, orange sticks, napkins, etc. are exclusively disposable
+          </p>
+        </div>
+        <div class="guarantees__div__second">
+          <h3 data-language="es">Herramientas seguras</h3>
+          <h3 data-language="ru">Безопасные инструменты</h3>
+          <h3 data-language="en">Safe tools</h3>
+          <img src="./img/scissors.png" alt="scissors" />
+          <p data-language="es">
+            todos los instrumentos reutilizables se procesan en un horno
+          </p>
+          <p data-language="ru">
+            все многоразовые инструменты проходят обработку в жаровом шкафу
+          </p>
+          <p data-language="en">
+            all reusable instruments are processed in an oven
+          </p>
+        </div>
+        <div class="guarantees__div__third">
+          <h3 data-language="ru">5 días de garantía</h3>
+          <h3 data-language="ru">5 дней гарантии</h3>
+          <h3 data-language="ru">5 days warranty</h3>
+          <img src="./img/guarantee.png" alt="shield image" />
+          <p data-language="es">
+            si durante este periodo se rompe el recubrimiento o las uñas
+            extendidas, las reharé
+          </p>
+          <p data-language="ru">
+            если в этот срок покрытие или нарощенные ногти сломаются, я
+            переделаю их
+          </p>
+          <p data-language="en">
+            If during this period the coating or extended nails break, I will
+            redo them
+          </p>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 data-language="es">¿Como encontrarme?</h2>
+        <p data-language="es" itemprop="address">
+          Acepto en la dirección: Buenos Aires, Emilio Mitre, 87
+        </p>
         <p data-language="es">
-          ¡Hola a todos! Mi nombre es Alexander, soy manicurista y pedicurista
-          de ¡Buenos Aires! <br /><br />
-          Al contactarme podrás recibir:
+          esta es la zona de Caballito, línea azul del metro <br />
+          a 5 minutos de la estación Primera Junta, <br />
+          a 8 minutos de la estación Puan.
         </p>
-
+        <h2 data-language="ru">Как меня найти?</h2>
+        <p data-language="ru" itemprop="address">
+          Я принимаю по адресу: Emilio Mitre, 87
+        </p>
         <p data-language="ru">
-          Всем привет! Меня зовут Александр, я - мастер маникюра и педикюра из
-          Буэнос-Айреса! <br /><br />
-          Обращаясь ко мне, вы можете получить:
+          Это район Кабашито, голубая ветка метро <br />
+          5 минут от станции Primera Junta, <br />
+          8 минут от станции Puan
         </p>
-
+        <h2 data-language="en">How to find me?</h2>
+        <p data-language="en" itemprop="address">
+          I accept at: Buenos Aires, Emilio Mitre, 87
+        </p>
         <p data-language="en">
-          Hi all! My name is Alexander, I am a manicurist and pedicurist from
-          Buenos Aires! <br /><br />
-          By contacting me, you can receive:
+          this is the Caballito area, metro blue line <br />
+          5 minutes from Primera Junta station, <br />
+          8 minutes from Puan Station
         </p>
-        <div class="aboutMe__wrapper__ul">
-          <ul class="aboutMe__ul">
-            <li class="aboutMe__li" data-language="es">
-              <img src="./img/star.png" alt="star" />manicura de hardware
-            </li>
-            <li class="aboutMe__li" data-language="es">
-              <img src="./img/star.png" alt="star" />manicura rusa
-            </li>
-            <li class="aboutMe__li" data-language="es">
-              <img src="./img/star.png" alt="star" />extensiones de uñas
-            </li>
-            <li class="aboutMe__li" data-language="es">
-              <img src="./img/star.png" alt="star" />pedicure inteligente
-            </li>
-            <li class="aboutMe__li" data-language="es">
-              <img src="./img/star.png" alt="star" />pedicura con barniz
-            </li>
-
-            <li class="aboutMe__li" data-language="ru">
-              <img src="./img/star.png" alt="star" />аппаратный маникюр
-            </li>
-            <li class="aboutMe__li" data-language="ru">
-              <img src="./img/star.png" alt="star" />маникюр с покрытием
-            </li>
-            <li class="aboutMe__li" data-language="ru">
-              <img src="./img/star.png" alt="star" />наращивание ногтей
-            </li>
-            <li class="aboutMe__li" data-language="ru">
-              <img src="./img/star.png" alt="star" />педикюр SMART
-            </li>
-            <li class="aboutMe__li" data-language="ru">
-              <img src="./img/star.png" alt="star" />педикюр с покрытием
-            </li>
-
-            <li class="aboutMe__li" data-language="en">
-              <img src="./img/star.png" alt="star" />hardware manicure
-            </li>
-            <li class="aboutMe__li" data-language="en">
-              <img src="./img/star.png" alt="star" />coated manicure
-            </li>
-            <li class="aboutMe__li" data-language="en">
-              <img src="./img/star.png" alt="star" />nail extensions
-            </li>
-            <li class="aboutMe__li" data-language="en">
-              <img src="./img/star.png" alt="star" />pedicure SMART
-            </li>
-            <li class="aboutMe__li" data-language="en">
-              <img src="./img/star.png" alt="star" />coated pedicure
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="slider" id="slider">
-        <button class="slider__button__prev">
-          <img src="./img/prev.png" alt="button previosly slide" />
-        </button>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo1.jpg"
-            alt="photo pink nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo2.jpg"
-            alt="photo purple nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo3.jpg"
-            alt="photo flesh color nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo4.jpg"
-            alt="another photo flesh color nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo5.jpg"
-            alt="photo white nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo6.jpg"
-            alt="another photo pink nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo7.jpg"
-            alt="photo black nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo8.jpg"
-            alt="another photo pink nail"
-            class="slider__img"
-          />
-        </div>
-        <div class="slider__wrapper__photo" tabindex="0">
-          <img
-            src="./img/photo9.jpg"
-            alt="photo dark cat eye nail"
-            class="slider__img"
-          />
-        </div>
-        <button class="slider__button__next">
-          <img src="./img/next.png" alt="button next slide" />
-        </button>
-      </div>
-      <div class="contacts" id="contacts">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9286.215531064943!2d-58.441148600232474!3d-34.62506855025307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bb983289d1%3A0xe12b1b91ca2b0abc!2sLovenailsba!5e0!3m2!1sru!2sar!4v1701891760224!5m2!1sru!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+          itemscope
+          itemtype="https://schema.org/GeoCoordinates"
+          itemprop="geo"
+        ></iframe>
+        <p data-language="es">
+          Puedes leer reseñas sobre mi trabajo o dejar tu propia reseña usando
+          <a
+            href="https://maps.app.goo.gl/z9jS966qPdxgmkSt9"
+            class="contacts__reviews"
+            >el enlace</a
+          >
+        </p>
+        <p data-language="ru">
+          Ознакомиться с отзывами о моей работе или оставить свой отзыв можно по
+          <a
+            href="https://maps.app.goo.gl/z9jS966qPdxgmkSt9"
+            class="contacts__reviews"
+            >ссылке</a
+          >
+        </p>
+        <p data-language="en">
+          You can read reviews about my work or leave your own review using
+          <a
+            href="https://maps.app.goo.gl/z9jS966qPdxgmkSt9"
+            class="contacts__reviews"
+            >the link</a
+          >
+        </p>
         <p data-language="es">
           ¿Quieres concertar una cita, conocer precios o hacer una pregunta?
           Escríbeme
@@ -187,21 +252,18 @@
         <p data-language="es">
           a Telegram
           <a href="https://t.me/Alexmanicura"
-            ><img
-              src="./img/telegram.png"
-              alt="url to account in Telegram" /></a
+            ><img src="./img/telegram.png" alt="url a cuenta en Telegram" /></a
           ><br />
-          или WhatsApp
+          a WhatsApp
           <a href="https://wa.me/message/NJB7NT7CRU23M1"
-            ><img
-              src="./img/whatsapp.png"
-              alt="url to account in WhatsApp" /></a
+            ><img src="./img/whatsapp.png" alt="url a cuenta en WhatsApp" /></a
           ><br />
-          incluido por numero +541137843962 <br />
-          y también por mensaje directo a Instagram
+          incluido por numero <span itemprop="telefone">+5491137843962</span>
+          <br />
+          o por mensaje directo a Instagram
           <a
             href="https://instagram.com/lovenailsba_beauty?igshid=MzMyNGUyNmU2YQ=="
-            ><img src="./img/instagram.png" alt="url to account in Instagram"
+            ><img src="./img/instagram.png" alt="url a cuenta en Instagram"
           /></a>
         </p>
 
@@ -215,72 +277,72 @@
               src="./img/telegram.png"
               alt="url to account in Telegram" /></a
           ><br />
-          или WhatsApp
+          в WhatsApp
           <a href="https://wa.me/message/NJB7NT7CRU23M1"
             ><img
               src="./img/whatsapp.png"
               alt="url to account in WhatsApp" /></a
           ><br />
-          в т.ч. по номеру +541137843962 <br />
-          а также в директ в Instagram
+          в т.ч. по номеру <span itemprop="telefone">+5491137843962</span>
+          <br />
+          или в директ в Instagram
           <a
             href="https://instagram.com/lovenailsba_beauty?igshid=MzMyNGUyNmU2YQ=="
             ><img src="./img/instagram.png" alt="url to account in Instagram"
           /></a>
         </p>
 
-        <p data-language="es">
+        <p data-language="en">
           Want to make an appointment, find out prices or ask a question? Write
           me
         </p>
-        <p data-language="es">
+        <p data-language="en">
           on Telegram
           <a href="https://t.me/Alexmanicura"
             ><img
               src="./img/telegram.png"
               alt="url to account in Telegram" /></a
           ><br />
-          or WhatsApp
+          on WhatsApp
           <a href="https://wa.me/message/NJB7NT7CRU23M1"
             ><img
               src="./img/whatsapp.png"
               alt="url to account in WhatsApp" /></a
           ><br />
-          including the number +541137843962 <br />
-          and also DM on Instagram
+          including the number <span itemprop="telefone">+5491137843962</span>
+          <br />
+          o DM on Instagram
           <a
             href="https://instagram.com/lovenailsba_beauty?igshid=MzMyNGUyNmU2YQ=="
             ><img src="./img/instagram.png" alt="url to account in Instagram"
           /></a>
         </p>
+      </section>
+      <div class="button__up">
+        <button data-language="es">
+          <img
+            src="./img/up.png"
+            alt="botón para desplazarse en la parte superior del sitio web"
+          />Arriba
+        </button>
+        <button data-language="ru">
+          <img
+            src="./img/up.png"
+            alt="button to scroll on top of website"
+          />Вверх
+        </button>
+        <button data-language="en">
+          <img src="./img/up.png" alt="button to scroll on top of website" />Up
+        </button>
       </div>
     </main>
     <footer>
       <div data-language="es">Aleksandr Gurev</div>
-
       <div data-language="ru">Александр Гурьев</div>
-
       <div data-language="en">Aleksandr Gurev</div>
-      <div>
-        <a href="https://wa.me/message/NJB7NT7CRU23M1"
-          ><img src="./img/whatsapp.png" alt="url to account in WhatsApp"
-        /></a>
-      </div>
+
       <div>CUIL 20631114416</div>
-      <div>
-        <a href="https://t.me/Alexmanicura"
-          ><img src="./img/telegram.png" alt="url to account in Telegram"
-        /></a>
-      </div>
-      <div>+541137843962</div>
-      <div>
-        <a
-          href="https://instagram.com/lovenailsba_beauty?igshid=MzMyNGUyNmU2YQ=="
-          ><img src="./img/instagram.png" alt="url to account in Instagram"
-        /></a>
-      </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
