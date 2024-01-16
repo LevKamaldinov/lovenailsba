@@ -85,10 +85,15 @@ a:active {
 .service__wrapper__main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 2px;
+    row-gap: 2px;
     grid-template-rows: repeat(2, 400px);
     grid-template-areas: 
         'a b c'
         'd b e';
+}
+.service__wrapper__main > div {
+    border-radius: 20px;
 }
 @media (max-width: 500px) {
     .service__wrapper__main {
@@ -165,8 +170,8 @@ a:active {
 .service__wrapper__fourth {
     height: 400px;
     grid-area: c;
-    background-image: url('./img/coatedPedicure.jpg');
-    background-size: cover;
+    background-image: url('./img/pedicure.jpg');
+    background-size: 100% 100%;
     text-align: center;
     animation: 
         down 2s, 
